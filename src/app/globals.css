@@ -54,6 +54,103 @@ code {
 .code-block .comment { color: #6c7086; font-style: italic; }
 .code-block .number { color: #fab387; }
 
+/* ─── New CodeBlock styles ─── */
+
+.cb-root {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255,255,255,0.04);
+  background: #1e1e2e;
+}
+
+.cb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: #181825;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.cb-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  color: #6c7086;
+  transition: all 0.15s;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.cb-copy-btn:hover {
+  background: rgba(255,255,255,0.08);
+  color: #cdd6f4;
+}
+
+.cb-body {
+  overflow-x: auto;
+  padding: 0.75rem 0;
+}
+
+.cb-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace;
+}
+
+.cb-line:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.cb-ln {
+  user-select: none;
+  text-align: right;
+  padding: 0 1rem 0 1.25rem;
+  color: #45475a;
+  font-size: 0.6875rem;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: top;
+  line-height: 1.75;
+  border-right: 1px solid rgba(255,255,255,0.04);
+}
+
+.cb-code {
+  padding: 0 1.25rem;
+  color: #cdd6f4;
+  white-space: pre;
+  vertical-align: top;
+  line-height: 1.75;
+}
+
+/* Syntax colors – Catppuccin Mocha palette */
+.cb-keyword   { color: #cba6f7; font-weight: 600; }
+.cb-builtin   { color: #f9e2af; }
+.cb-fn        { color: #89b4fa; }
+.cb-string    { color: #a6e3a1; }
+.cb-num       { color: #fab387; }
+.cb-const     { color: #fab387; font-weight: 600; }
+.cb-op        { color: #89dceb; }
+.cb-punct     { color: #6c7086; }
+.cb-decorator { color: #f5c2e7; font-style: italic; }
+
+.cb-comment {
+  color: #585b70;
+  font-style: italic;
+}
+
+.cb-comment-header {
+  color: #7f849c;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .card-hover {
   transition: all 0.3s ease;
 }
